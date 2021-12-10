@@ -1,7 +1,7 @@
 # Summary
 
-* [IMPLEMENTING DEVSECOPS](README.md)
-* [01. WHAT IS DEVSECOPS?](what-is-devsecops/README.md)
+* [IMPLEMENTING DEVSECOPS](implementing-devsecops/README.md)
+* [01. WHAT IS DEVSECOPS?](implementing-devsecops/what-is-devsecops/README.md)
 * [02. SETTING UP THE LAB ENVIRONMENT](week2.md)
 * [03. BUILDING A DEVOPS PIPELINE](week3.md)
 * [04. SECURING THE SUPPLY CHAIN WITH SCA](week4.md)
