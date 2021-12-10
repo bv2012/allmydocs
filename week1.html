@@ -3,7 +3,7 @@
 <html lang="" >
     <head>
         <meta charset="UTF-8">
-        <title>IMPLEMENTING DEVSECOPS · HonKit</title>
+        <title>01. WHAT IS DEVSECOPS? · HonKit</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="HonKit 3.6.23">
@@ -56,8 +56,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="week1.html" />
+    <link rel="next" href="week2.html" />
     
+    
+    <link rel="prev" href="./" />
     
 
     </head>
@@ -86,7 +88,7 @@
         
         
     
-        <li class="chapter active" data-level="1.1" data-path="./">
+        <li class="chapter " data-level="1.1" data-path="./">
             
                 <a href="./">
             
@@ -100,7 +102,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.1.1" data-path="week1.html">
+        <li class="chapter active" data-level="1.1.1" data-path="week1.html">
             
                 <a href="week1.html">
             
@@ -291,7 +293,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >IMPLEMENTING DEVSECOPS</a>
+        <a href="." >01. WHAT IS DEVSECOPS?</a>
     </h1>
 </div>
 
@@ -306,54 +308,66 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="introduction-and-welcome">Introduction and Welcome</h1>
-<p>This Area contains my notes on the LFX Training courses <a href="https://honkit.netlify.app/setup.html" target="_blank">Learning How to publish using HonKit a Gitbook equivalent tool</a>.</p>
-<h2 id="how-to-locally-serve-this-repository">How to locally serve this repository</h2>
+                                <h1 id="learning-how-to-learn---week-1">Learning How to Learn - Week 1</h1>
+<h2 id="2-thinking-modes">2 Thinking Modes</h2>
 <ol>
-<li>Open your terminal and run<ul>
-<li><code>git clone https://github.com/richdayandnight/tutorial-gitbook-learning-how-to-learn.git</code></li>
+<li>Focused</li>
+<li>Diffused</li>
+</ol>
+<p>Simple pinball analogy</p>
+<ul>
+<li>Focused<ul>
+<li>tight spacing rubber bumpers</li>
+<li>prefrontal cortex</li>
 </ul>
 </li>
-<li>Install dependencies (this is assuming that you already have npm and yarn installed)<ul>
-<li><code>npm install -g gitbook-cli</code></li>
-<li><code>yarn add gulp gulp-gh-pages gulp-load-plugins --save-dev</code></li>
-<li><code>gitbook install</code></li>
+<li>Diffused mode<ul>
+<li>wide spaced rubber bumpers</li>
+<li>walking, exercising, etc.</li>
 </ul>
 </li>
-<li>On the root folder of this repository (<code>cd tutorial-gitbook-learning-how-to-learn</code>) run<ul>
-<li><code>gitbook serve</code></li>
+</ul>
+<h2 id="procrastination">Procrastination</h2>
+<p>When preparing for a weight-lifting competition, one does not slack off and wait till the day before the competition to work out. Building muscles does not work that way. To gain muscular structure, you need to do a little work every day, gradually allowing your muscles to grow. Similarly, to build neural structure, you need to do a <strong>little work every day</strong>, gradually allowing yourself to grow a neuro-scaffold to hang your thinking on a little bit, every day, and that&apos;s the trick</p>
+<pre><code>Practice makes Permanent
+</code></pre><h2 id="brain">Brain</h2>
+<ul>
+<li>A 3-pound organ that consumes 10 times more energy by weight than the rest of the body</li>
+<li>There&apos;s constant turnover in the single connections between neurons called synapses (We&apos;re a new person when we sleep and wake up)</li>
+<li>Q: According to the video, what happens on the dendrites of neurons when you learn something new?</li>
+</ul>
+<p>A; Many new synapses (connections) are formed on the dendrites.</p>
+<ol>
+<li>Working Memory<ul>
+<li>There&apos;s as many as 4 chunks of information</li>
+<li>Working memory is the part of memory that has to do with what you&apos;re immediately and consciously processing in your mind.</li>
 </ul>
 </li>
-<li>To deploy changes to github, run<ul>
-<li><code>gulp publish</code></li>
+<li>Long-term memory<ul>
+<li>long term memory is wide a storage warehouse, and just like a warehouse, it&apos;s distributed over a big area. Different kinds of long-term memories are stored in different regions of the brain.</li>
 </ul>
 </li>
 </ol>
-<h2 id="what-a-gitbook-can-contain">What a gitbook can contain</h2>
-<h3 id="some-code">Some code</h3>
-<pre><code class="lang-python"><span class="hljs-comment"># This program adds two numbers</span>
-
-num1 = <span class="hljs-number">1.5</span>
-num2 = <span class="hljs-number">6.3</span>
-
-<span class="hljs-comment"># Add two numbers</span>
-<span class="hljs-built_in">sum</span> = num1 + num2
-
-<span class="hljs-comment"># Display the sum</span>
-<span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;The sum of {0} and {1} is {2}&apos;</span>.<span class="hljs-built_in">format</span>(num1, num2, <span class="hljs-built_in">sum</span>))
-</code></pre>
-<h2 id="some-formula">Some formula</h2>
-<p>$$
-\int_{-\infty}^\infty g(x) dx</p>
-<p>$$</p>
-<p>Block math with (tag):</p>
-<p>$$
-\tag{a.1} x+y^{2x}</p>
-<p>$$</p>
-<p>Block math with tag:</p>
-<p>$$
-\tag{a.2} x+y^{2x}</p>
-<p>$$</p>
+<h2 id="sleep">Sleep</h2>
+<ul>
+<li>allows the brain to wash away metabolic toxins</li>
+<li>allows your brain to strengthen important parts of memories even as it erases less important memories </li>
+<li>allows your brain a chance to rehearse difficult material--going over and over the tougher aspects of what you are trying to learn</li>
+<li>makes a remarkable difference in your ability to figure out difficult problems and to understand what you are trying to learn</li>
+<li><strong>Dreaming</strong> - about something helps your ability to understand it</li>
+</ul>
+<h2 id="tip">Tip</h2>
+<ul>
+<li>Pomodoro, 25 minutes, no interruptions, focus</li>
+<li><strong>Practice makes permanent</strong> - 4 slots of memory -&gt; with practice -&gt; move to leng-term memory</li>
+<li>Spaced repetition - is good because it builds stronger neural structures by repeating them over a number of days</li>
+<li>2 top methods of learning:<ul>
+<li>Learning by doing</li>
+<li>Learning by osmosis</li>
+</ul>
+</li>
+<li>Success in life reached through passion and persistence</li>
+</ul>
 
                                 
                                 </section>
@@ -381,8 +395,12 @@ num2 = <span class="hljs-number">6.3</span>
 
             
                 
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: IMPLEMENTING DEVSECOPS">
+                    <i class="fa fa-angle-left"></i>
+                </a>
                 
-                <a href="week1.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 01. WHAT IS DEVSECOPS?">
+                
+                <a href="week2.html" class="navigation navigation-next " aria-label="Next page: 02. SETTING UP THE LAB ENVIRONMENT">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -393,7 +411,7 @@ num2 = <span class="hljs-number">6.3</span>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"IMPLEMENTING DEVSECOPS","level":"1.1","depth":1,"next":{"title":"01. WHAT IS DEVSECOPS?","level":"1.1.1","depth":2,"path":"week1.md","ref":"week1.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2021-12-10T17:51:02.344Z","type":"markdown"},"gitbook":{"version":"3.6.23","time":"2021-12-10T18:47:11.313Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"01. WHAT IS DEVSECOPS?","level":"1.1.1","depth":2,"next":{"title":"02. SETTING UP THE LAB ENVIRONMENT","level":"1.1.2","depth":2,"path":"week2.md","ref":"week2.md","articles":[]},"previous":{"title":"IMPLEMENTING DEVSECOPS","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[{"title":"01. WHAT IS DEVSECOPS?","level":"1.1.1","depth":2,"path":"week1.md","ref":"week1.md","articles":[]},{"title":"02. SETTING UP THE LAB ENVIRONMENT","level":"1.1.2","depth":2,"path":"week2.md","ref":"week2.md","articles":[]},{"title":"03. BUILDING A DEVOPS PIPELINE","level":"1.1.3","depth":2,"path":"week3.md","ref":"week3.md","articles":[]},{"title":"04. SECURING THE SUPPLY CHAIN WITH SCA","level":"1.1.4","depth":2,"path":"week4.md","ref":"week4.md","articles":[]},{"title":"05. STATIC APPLICATION SECURITY TESTING (SAST)","level":"1.1.5","depth":2,"path":"week5.md","ref":"week5.md","articles":[]},{"title":"06. AUDITING CONTAINER IMAGES","level":"1.1.6","depth":2,"path":"week6.md","ref":"week6.md","articles":[]},{"title":"07. SECURE DEPLOYMENT AND DYNAMIC APPLICATION SECURITY TESTING (DAST)","level":"1.1.7","depth":2,"path":"week7.md","ref":"week7.md","articles":[]},{"title":"08. SYSTEM SECURITY AUDITING WITH IAC","level":"1.1.8","depth":2,"path":"week8.md","ref":"week8.md","articles":[]},{"title":"09. SECURING KUBERNETES DEPLOYMENTS","level":"1.1.9","depth":2,"path":"week9.md","ref":"week9.md","articles":[]},{"title":"10. SECRETS MANAGEMENT WITH VAULT","level":"1.1.10","depth":2,"path":"week10.md","ref":"week10.md","articles":[]},{"title":"11. RUNTIME SECURITY MONITORING AND REMEDIATION","level":"1.1.11","depth":2,"path":"week11.md","ref":"week11.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"week1.md","mtime":"2021-12-10T17:07:02.483Z","type":"markdown"},"gitbook":{"version":"3.6.23","time":"2021-12-10T18:47:11.313Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

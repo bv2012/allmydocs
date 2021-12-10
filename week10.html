@@ -3,7 +3,7 @@
 <html lang="" >
     <head>
         <meta charset="UTF-8">
-        <title>IMPLEMENTING DEVSECOPS · HonKit</title>
+        <title>10. SECRETS MANAGEMENT WITH VAULT · HonKit</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="HonKit 3.6.23">
@@ -56,8 +56,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="week1.html" />
+    <link rel="next" href="week11.html" />
     
+    
+    <link rel="prev" href="week9.html" />
     
 
     </head>
@@ -86,7 +88,7 @@
         
         
     
-        <li class="chapter active" data-level="1.1" data-path="./">
+        <li class="chapter " data-level="1.1" data-path="./">
             
                 <a href="./">
             
@@ -217,7 +219,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.1.10" data-path="week10.html">
+        <li class="chapter active" data-level="1.1.10" data-path="week10.html">
             
                 <a href="week10.html">
             
@@ -291,7 +293,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >IMPLEMENTING DEVSECOPS</a>
+        <a href="." >10. SECRETS MANAGEMENT WITH VAULT</a>
     </h1>
 </div>
 
@@ -306,54 +308,73 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="introduction-and-welcome">Introduction and Welcome</h1>
-<p>This Area contains my notes on the LFX Training courses <a href="https://honkit.netlify.app/setup.html" target="_blank">Learning How to publish using HonKit a Gitbook equivalent tool</a>.</p>
-<h2 id="how-to-locally-serve-this-repository">How to locally serve this repository</h2>
+                                <h1 id="learning-how-to-learn---week-4">Learning How to Learn - Week 4</h1>
+<h2 id="things-that-make-us-human">Things that make us human</h2>
+<ul>
+<li>Learning</li>
+<li>Language</li>
+<li>Planning</li>
+<li>Visual Cortex - matures in childhood</li>
+<li>Prefrontal Cortex - matures in puberty</li>
+</ul>
+<h2 id="quotes">Quotes</h2>
+<ul>
+<li>We can make significant changes in our brain by changing how we think.</li>
+<li><strong>Taking responsibility of our own learning is one of the most important things we can do.</strong></li>
+<li>Virtue of the less brilliant: perseverance</li>
+<li>&quot;The first principle is that you must not fool yourself- and you are the easiest person to fool.&quot; - Richart Feynman</li>
+</ul>
+<h2 id="right-hemisphere">Right hemisphere</h2>
+<ul>
+<li>big picture thinking, context-dependent thinking style are significantly more characteristic to result in <strong>right hemisphere dominance</strong></li>
+<li>Acc to neuroscientist, Vilayanur S. Ramachandran - the right hemisphere serves as a devil&apos;s advocate to question the status quo and look for global inconsistencies, while the left hemisphere clings to the way things were</li>
+</ul>
+<h2 id="how-to-prepare-for-a-test-test-checklist-developed-by-richard-felder">How to prepare for a test: Test Checklist (developed by Richard Felder)</h2>
 <ol>
-<li>Open your terminal and run<ul>
-<li><code>git clone https://github.com/richdayandnight/tutorial-gitbook-learning-how-to-learn.git</code></li>
-</ul>
-</li>
-<li>Install dependencies (this is assuming that you already have npm and yarn installed)<ul>
-<li><code>npm install -g gitbook-cli</code></li>
-<li><code>yarn add gulp gulp-gh-pages gulp-load-plugins --save-dev</code></li>
-<li><code>gitbook install</code></li>
-</ul>
-</li>
-<li>On the root folder of this repository (<code>cd tutorial-gitbook-learning-how-to-learn</code>) run<ul>
-<li><code>gitbook serve</code></li>
-</ul>
-</li>
-<li>To deploy changes to github, run<ul>
-<li><code>gulp publish</code></li>
-</ul>
-</li>
+<li>Did you make a serious effort to understand the text?</li>
+<li>Did you work with classmates on homework problems?</li>
+<li>Did you attempt to outline every homework problem solution?</li>
+<li>Did you participate actively in homework group discussions?</li>
+<li>Did you consult with the instructor?</li>
+<li>Did you understand all of your homework problem solutions?</li>
+<li>Did you ask in class for explanations of homework problem solutions that weren&apos;t clear to you?</li>
+<li>A study guide?</li>
+<li>Did you attempt to outline lots of problem solutions quickly?</li>
+<li>Did you go over the study guide and problems with classsmates and quiz one another?</li>
+<li>A review session?</li>
+<li>Did you get a reasonable night&apos;s sleep before the test?</li>
 </ol>
-<h2 id="what-a-gitbook-can-contain">What a gitbook can contain</h2>
-<h3 id="some-code">Some code</h3>
-<pre><code class="lang-python"><span class="hljs-comment"># This program adds two numbers</span>
-
-num1 = <span class="hljs-number">1.5</span>
-num2 = <span class="hljs-number">6.3</span>
-
-<span class="hljs-comment"># Add two numbers</span>
-<span class="hljs-built_in">sum</span> = num1 + num2
-
-<span class="hljs-comment"># Display the sum</span>
-<span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;The sum of {0} and {1} is {2}&apos;</span>.<span class="hljs-built_in">format</span>(num1, num2, <span class="hljs-built_in">sum</span>))
-</code></pre>
-<h2 id="some-formula">Some formula</h2>
-<p>$$
-\int_{-\infty}^\infty g(x) dx</p>
-<p>$$</p>
-<p>Block math with (tag):</p>
-<p>$$
-\tag{a.1} x+y^{2x}</p>
-<p>$$</p>
-<p>Block math with tag:</p>
-<p>$$
-\tag{a.2} x+y^{2x}</p>
-<p>$$</p>
+<h2 id="notes">Notes</h2>
+<ul>
+<li>Consulting with your peers/ talking to them about what you&apos;re studying helps build your understanding and can help you in catching where your thinking has gone astray.</li>
+<li>When you receive a test paper:<ol>
+<li>Skim the test paper</li>
+<li>Work on the difficult problem<ul>
+<li>if stuck for at least 1 minute, move on to easier problems</li>
+</ul>
+</li>
+<li>Answer easy problems</li>
+<li>Get back to difficult problems</li>
+</ol>
+</li>
+<li>Cortisol is produced when you&apos;re under stress while taking an exam (sweaty palms, racing heart)<ul>
+<li>It&apos;s how you view/interpret the stress that matters<ul>
+<li>Stress -&gt; &quot;This test makes me afraid&quot; -&gt; You&apos;ll be afraid</li>
+<li>Stress -&gt; &quot;This test makes me excited&quot;
+-&gt; You&apos;ll be more fired up to take on the exam</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Practice deep breathing</li>
+<li>Always recheck your work, even after you&apos;re &quot;done&quot; with it. Through <strong>overconfidence</strong>, it might be that you fool yourself that what you&apos;ve done is correct even if it isn&apos;t. Pause. Shift your attention and ask yourself a question &quot;Does this really make sense?&quot;</li>
+</ul>
+<h2 id="summary">Summary</h2>
+<ul>
+<li>Santiago Ramón y Cajal (Noble prize winner, neuroscientist) - If you change your thoughts, you can really truly change your life.</li>
+</ul>
+<h2 id="diffused-focused-thinking-analogy-pic">Diffused-Focused thinking analogy pic</h2>
+<p><img src="diffused-focused.png" alt="Diffused-Focused"></p>
 
                                 
                                 </section>
@@ -381,8 +402,12 @@ num2 = <span class="hljs-number">6.3</span>
 
             
                 
+                <a href="week9.html" class="navigation navigation-prev " aria-label="Previous page: 09. SECURING KUBERNETES DEPLOYMENTS">
+                    <i class="fa fa-angle-left"></i>
+                </a>
                 
-                <a href="week1.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 01. WHAT IS DEVSECOPS?">
+                
+                <a href="week11.html" class="navigation navigation-next " aria-label="Next page: 11. RUNTIME SECURITY MONITORING AND REMEDIATION">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -393,7 +418,7 @@ num2 = <span class="hljs-number">6.3</span>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"IMPLEMENTING DEVSECOPS","level":"1.1","depth":1,"next":{"title":"01. WHAT IS DEVSECOPS?","level":"1.1.1","depth":2,"path":"week1.md","ref":"week1.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2021-12-10T17:51:02.344Z","type":"markdown"},"gitbook":{"version":"3.6.23","time":"2021-12-10T18:47:11.313Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"10. SECRETS MANAGEMENT WITH VAULT","level":"1.1.10","depth":2,"next":{"title":"11. RUNTIME SECURITY MONITORING AND REMEDIATION","level":"1.1.11","depth":2,"path":"week11.md","ref":"week11.md","articles":[]},"previous":{"title":"09. SECURING KUBERNETES DEPLOYMENTS","level":"1.1.9","depth":2,"path":"week9.md","ref":"week9.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"week10.md","mtime":"2021-12-10T17:07:02.483Z","type":"markdown"},"gitbook":{"version":"3.6.23","time":"2021-12-10T18:47:11.313Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
