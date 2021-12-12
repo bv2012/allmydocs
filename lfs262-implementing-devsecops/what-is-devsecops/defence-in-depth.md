@@ -6,7 +6,7 @@ While analyzing DevSecOps, it is hardly useful to look at applications or infras
 
 Consider the example of an application running in a Kubernetes environment that is hosted on the cloud, which is a common use case with cloud native applications. In such a scenario, you need to consider implementing security policies for the following layers:
 
-![](<../../.gitbook/assets/image (2).png>)**The Onion Approach**
+![](../../.gitbook/assets/image (2).png)**The Onion Approach**
 
 ****
 
