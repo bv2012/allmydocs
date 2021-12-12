@@ -1,0 +1,650 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Application Security Risks · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.6.23">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="defence-in-depth.html" />
+    
+    
+    <link rel="prev" href="understanding-modern-applications.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../implementing-devsecops/">
+            
+                <a href="../../implementing-devsecops/">
+            
+                    
+                    IMPLEMENTING DEVSECOPS
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../implementing-devsecops/01-what-is-devsecops/">
+            
+                <a href="../../implementing-devsecops/01-what-is-devsecops/">
+            
+                    
+                    01. WHAT IS DEVSECOPS?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../implementing-devsecops/02-setting-up-the-lab-environment/">
+            
+                <a href="../../implementing-devsecops/02-setting-up-the-lab-environment/">
+            
+                    
+                    02. SETTING UP THE LAB ENVIRONMENT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../implementing-devsecops/03-building-a-devops-pipeline/">
+            
+                <a href="../../implementing-devsecops/03-building-a-devops-pipeline/">
+            
+                    
+                    03. BUILDING A DEVOPS PIPELINE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../implementing-devsecops/04-securing-the-supply-chain-with-sca/">
+            
+                <a href="../../implementing-devsecops/04-securing-the-supply-chain-with-sca/">
+            
+                    
+                    04. SECURING THE SUPPLY CHAIN WITH SCA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../../implementing-devsecops/05-static-application-security-testing-sast/">
+            
+                <a href="../../implementing-devsecops/05-static-application-security-testing-sast/">
+            
+                    
+                    05. STATIC APPLICATION SECURITY TESTING (SAST)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../../implementing-devsecops/06-auditing-container-images/">
+            
+                <a href="../../implementing-devsecops/06-auditing-container-images/">
+            
+                    
+                    06. AUDITING CONTAINER IMAGES
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../../implementing-devsecops/07-secure-deployment-and-dynamic-application-security-testing-dast/">
+            
+                <a href="../../implementing-devsecops/07-secure-deployment-and-dynamic-application-security-testing-dast/">
+            
+                    
+                    07. SECURE DEPLOYMENT AND DYNAMIC APPLICATION SECURITY TESTING (DAST)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../../implementing-devsecops/08-system-security-auditing-with-iac/">
+            
+                <a href="../../implementing-devsecops/08-system-security-auditing-with-iac/">
+            
+                    
+                    08. SYSTEM SECURITY AUDITING WITH IAC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../../implementing-devsecops/09-securing-kubernetes-deployments/">
+            
+                <a href="../../implementing-devsecops/09-securing-kubernetes-deployments/">
+            
+                    
+                    09. SECURING KUBERNETES DEPLOYMENTS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="../../implementing-devsecops/10-secrets-management-with-vault/">
+            
+                <a href="../../implementing-devsecops/10-secrets-management-with-vault/">
+            
+                    
+                    10. SECRETS MANAGEMENT WITH VAULT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="../../implementing-devsecops/11-runtime-security-monitoring-and-remediation/">
+            
+                <a href="../../implementing-devsecops/11-runtime-security-monitoring-and-remediation/">
+            
+                    
+                    11. RUNTIME SECURITY MONITORING AND REMEDIATION
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">LFS262 Implementing DevSecOps</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../page-21.html">
+            
+                <a href="../page-21.html">
+            
+                    
+                    WHAT IS DEVSECOPS?
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="devsecops.html">
+            
+                <a href="devsecops.html">
+            
+                    
+                    DevSecOps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="understanding-modern-applications.html">
+            
+                <a href="understanding-modern-applications.html">
+            
+                    
+                    Understanding Modern Applications
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.1.3" data-path="application-security-risks.html">
+            
+                <a href="application-security-risks.html">
+            
+                    
+                    Application Security Risks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="defence-in-depth.html">
+            
+                <a href="defence-in-depth.html">
+            
+                    
+                    Defence-in-Depth
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="creating-and-implementing-devsecops-pipelines.html">
+            
+                <a href="creating-and-implementing-devsecops-pipelines.html">
+            
+                    
+                    Creating and Implementing DevSecOps Pipelines
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="additional-resources-and-summary.html">
+            
+                <a href="additional-resources-and-summary.html">
+            
+                    
+                    Additional Resources and Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="setting-up-devsecops-lab-environment.html">
+            
+                <a href="setting-up-devsecops-lab-environment.html">
+            
+                    
+                    Setting Up DevSecOps Lab Environment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="building-devops-pipeline.html">
+            
+                <a href="building-devops-pipeline.html">
+            
+                    
+                    Building DevOps Pipeline
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../securing-the-supply-chain-with-sca/">
+            
+                <a href="../securing-the-supply-chain-with-sca/">
+            
+                    
+                    SECURING THE SUPPLY CHAIN WITH SCA
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../securing-the-supply-chain-with-sca/software-component-analysis-overview.html">
+            
+                <a href="../securing-the-supply-chain-with-sca/software-component-analysis-overview.html">
+            
+                    
+                    Software Component Analysis Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../securing-the-supply-chain-with-sca/key-practices-to-mitigate-risks-and-ensure-safety-in-the-supply-chain.html">
+            
+                <a href="../securing-the-supply-chain-with-sca/key-practices-to-mitigate-risks-and-ensure-safety-in-the-supply-chain.html">
+            
+                    
+                    Key Practices to Mitigate Risks and Ensure Safety in the Supply Chain
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="../securing-the-supply-chain-with-sca/tools-to-implement-sca.html">
+            
+                <a href="../securing-the-supply-chain-with-sca/tools-to-implement-sca.html">
+            
+                    
+                    Tools to Implement SCA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="../securing-the-supply-chain-with-sca/setting-up-software-composition-analysis-sca.html">
+            
+                <a href="../securing-the-supply-chain-with-sca/setting-up-software-composition-analysis-sca.html">
+            
+                    
+                    Setting up Software Composition Analysis (SCA)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Application Security Risks</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="application-security-risks">Application Security Risks</h1>
+<h2 id="what-are-the-risks-with-modern-applications">What Are the Risks with Modern Applications?</h2>
+<p>Traditionally, when applications were built as monoliths and deployed in data centers, limiting physical access and setting up firewalls would provide sufficient security. With the advent of cloud computing, security measures have been expanded to further implement policies associated with virtual private clouds (VPCs), network access control (NAC), and identity and access management (IAM).</p>
+<p>Running modern applications on the cloud—which are exposed as APIs, designed as microservices, packaged with containers, and deployed with Kubernetes—introduces new dimensions of risk. Microservices open many perimeters (for many services), have a flexible flow and are constantly/rapidly deployed, which make it even more challenging to address security issues associated with them.</p>
+<p>Next, we will present some tales of caution that should help you put things in perspective.</p>
+<h2 id="apiapplication-vulnerabilities">API/Application Vulnerabilities</h2>
+<ul>
+<li>A researcher found a way to take over a user account of any Uber driver (<a href="https://apisecurity.io/issue-49-uber-account-takeover-leaky-get-api/" target="_blank">Issue 49: Uber account takeover and the leaky Get API - API Security News</a>)</li>
+<li>Researchers detected vulnerabilities with electric vehicle (EV) charging stations, using which they could obtain users&apos; personal information and take control of the charging, possibly causing spikes in charge or mass attacks (<a href="https://apisecurity.io/issue-145-apis-electric-car-charging-stations-nuts-bolts-oauth-2-0/" target="_blank">Issue 145: APIs and electric car charging stations, The Nuts and Bolts of OAuth 2.0 - API Security News</a>)</li>
+<li>A vulnerability in the iPhone’s automatic call recorder application could expose users’ call recordings and sensitive information (<a href="https://apisecurity.io/issue-125/" target="_blank">Issue 125: iPhone call recorder API flaw, Burp and OpenAPI, GraphQL pentesting, FAPI - API Security News</a>).</li>
+</ul>
+<p>You can read about many such vulnerabilities at <a href="https://apisecurity.io" target="_blank">API Security Articles, News, Vulnerabilities &amp; Best Practices</a>.</p>
+<h2 id="platform-vulnerabilities">Platform Vulnerabilities</h2>
+<p>In the 2017 Equifax breach, private information such as credit ratings, of 147 million Americans was leaked due to a known vulnerability in a third-party software, i.e. Apache Struts. The root cause for the breach was attributed to this software not being updated for a few months, despite a fix being available (<a href="https://en.wikipedia.org/wiki/2017\_Equifax\_data\_breach" target="_blank">2017 Equifax data breach - Wikipedia</a>).</p>
+<p>A vulnerability was discovered with runC that would allow containers to break out and gain root access on the underlying host in some cases. This affected most of the container environments running Docker and Kubernetes, with runC being the most common low-level container runtime.</p>
+<p>Certain Kubernetes vulnerabilities were discovered in the past that could allow attacks such as denial of service (read <a href="https://www.stackrox.io/blog/top-5-kubernetes-vulnerabilities-of-2019-the-year-in-review/" target="_blank">Top 5 Kubernetes Vulnerabilities of 2019 — the Year in Review | StackRox Community</a>. Also find out the <a href="https://www.cvedetails.com/vulnerability-list/vendor\_id-15867/product\_id-34016/Kubernetes-Kubernetes.html" target="_blank">recent Kubernetes CVEs</a>).</p>
+<p>For more information about API security, see <a href="https://www.pingidentity.com/en/company/blog/posts/2020/everything-need-know-api-security-2020.html" target="_blank">API Security? Yep, everything you needed to know about that in 6,252 words | Ping Identity</a>.</p>
+<p>The point here is that modern applications need a holistic and layered approach toward security and need everyone’s involvement, including that of the application developers.</p>
+<p>From the web application security perspective, one important resource is the <a href="https://owasp.org" target="_blank">Open Web Application Security Project (OWASP)</a>, which is an online community that produces resources such as articles, methodologies, even tools and technologies in the field of application security.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="understanding-modern-applications.html" class="navigation navigation-prev " aria-label="Previous page: Understanding Modern Applications">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="defence-in-depth.html" class="navigation navigation-next " aria-label="Next page: Defence-in-Depth">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Application Security Risks","level":"2.1.3","depth":2,"next":{"title":"Defence-in-Depth","level":"2.1.4","depth":2,"path":"lfs262-implementing-devsecops/what-is-devsecops/defence-in-depth.md","ref":"lfs262-implementing-devsecops/what-is-devsecops/defence-in-depth.md","articles":[]},"previous":{"title":"Understanding Modern Applications","level":"2.1.2","depth":2,"path":"lfs262-implementing-devsecops/what-is-devsecops/understanding-modern-applications.md","ref":"lfs262-implementing-devsecops/what-is-devsecops/understanding-modern-applications.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"lfs262-implementing-devsecops/what-is-devsecops/application-security-risks.md","mtime":"2021-12-12T16:04:10.081Z","type":"markdown"},"gitbook":{"version":"3.6.23","time":"2021-12-12T16:12:01.991Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
