@@ -3,49 +3,11 @@
 This Area contains my notes on the LFX Training courses [Learning How to publish using HonKit a Gitbook equivalent tool](https://honkit.netlify.app/setup.html).
 
 
-## How to locally serve this repository
+### [LFS262 Implementing DevSecOps](broken-reference)
 
-1. Open your terminal and run
-    - `git clone https://github.com/richdayandnight/tutorial-gitbook-learning-how-to-learn.git`
-2. Install dependencies (this is assuming that you already have npm and yarn installed)
-    - `npm install -g gitbook-cli`
-    - `yarn add gulp gulp-gh-pages gulp-load-plugins --save-dev`
-    - `gitbook install`
-3. On the root folder of this repository (`cd tutorial-gitbook-learning-how-to-learn`) run
-    - `gitbook serve`
-4. To deploy changes to github, run
-    - `gulp publish`
+### [LFS267 Jenkins Essentials](broken-reference)
 
-## What a gitbook can contain
+### [LFS268 CI/CD with Jenkins X](broken-reference)
 
-### Some code
+### [LFS269 GitOps Continuous Delivery on Kubernetes Flux](broken-reference)
 
-```python
-# This program adds two numbers
-
-num1 = 1.5
-num2 = 6.3
-
-# Add two numbers
-sum = num1 + num2
-
-# Display the sum
-print('The sum of {0} and {1} is {2}'.format(num1, num2, sum))
-```
-
-## Some formula
-
-$$
-\int_{-\infty}^\infty g(x) dx
-$$
-
-Block math with (tag):
-
-$$
-\tag{a.1} x+y^{2x}
-$$
-
-Block math with tag:
-$$
-\tag{a.2} x+y^{2x}
-$$
